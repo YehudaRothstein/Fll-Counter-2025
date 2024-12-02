@@ -14,7 +14,7 @@ body {
   justify-content: center;
   color: white;
   padding: 40px 80px;
-  text-align: left;
+  text-align: center;
   gap: 20px; /* Spacing between text and logo */
 }
 
@@ -31,17 +31,28 @@ body {
   font-size: 1.2rem;
 }
 
-.top-section .logo-container {
+.top-section{
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
 .top-section .team-logo {
-  max-width: 200px;
+  max-width: 100px; /* Adjusted size */
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.team-logo {
+  max-width: 100px; /* Adjusted size */
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Navbar */
@@ -118,9 +129,6 @@ body {
   transition: background-color 0.3s;
 }
 
-.timer-button:hover {
-  opacity: 0.9;
-}
 
 /* Missions Section */
 .missions {
@@ -188,10 +196,6 @@ body {
   transition: all 0.3s;
 }
 
-.point-option:hover {
-  background-color: #d4af37;
-  transform: scale(1.05);
-}
 
 .selected {
   background-color: #012265;

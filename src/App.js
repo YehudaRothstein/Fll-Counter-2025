@@ -78,18 +78,18 @@ function App() {
                     </div>
                 </div>
             </div>
+            <div className="logo-container">
+                <img src="/logo.png" alt="Team Logo" className="team-logo"/>
+            </div>
+            <div className="top-section">
+                <div className="text-container">
+                    <h1>Excalibur #6738 FLL Scorer</h1>
+                    <p>Track your FLL 2025 performance with ease.</p>
+                </div>
 
-    <div className="top-section">
-        <div className="text-container">
-            <h1>Excalibur #6738 FLL Scorer</h1>
-            <p>Track your FLL 2025 performance with ease.</p>
-        </div>
-        <div className="logo-container">
-            <img src="/logo.png" alt="Team Logo" className="team-logo"/>
-        </div>
-    </div>
+            </div>
 
-    <main className="missions">
+            <main className="missions">
                 <div className="mission-list">
                     {missions.map(mission => (
                         <div key={mission.id} className="mission-item">
