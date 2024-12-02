@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #012265;
+  color: #333;
+}
+
+/* Top Section with Side-by-Side Layout */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 80px;
+  text-align: left;
+  gap: 20px; /* Spacing between text and logo */
+}
+
+.top-section .text-container {
+  flex: 2;
+}
+
+.top-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.top-section p {
+  font-size: 1.2rem;
+}
+
+.top-section .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.top-section .team-logo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #d4af37;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+  z-index: 1000;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.visible {
+  transform: translateY(0);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Timer and Score Containers */
+.timer-score-container {
+  display: flex;
+  gap: 60px;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.timer,
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #012265;
+}
+
+/* Timer Buttons */
+.timer-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.timer-button.start {
+  background-color: green;
+  color: white;
+}
+
+.timer-button.pause {
+  background-color: red;
+  color: white;
+}
+
+.timer-button {
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer-button:hover {
+  opacity: 0.9;
+}
+
+/* Missions Section */
+.missions {
+  padding: 80px 20px;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mission-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.mission-title {
+  background-color: #d4af37;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mission-number {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Mission Points */
+.mission-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.point-option {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border: 2px solid #012265;
+  border-radius: 5px;
+  font-size: 1rem; /* Increased font size */
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  width: 170px; /* Larger size for better fit */
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.point-option:hover {
+  background-color: #d4af37;
+  transform: scale(1.05);
+}
+
+.selected {
+  background-color: #012265;
+  color: white;
+}
